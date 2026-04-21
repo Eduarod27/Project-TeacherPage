@@ -149,7 +149,7 @@ header {
     font-size: 3.5rem;
     color:var(--cor-texto);
     text-transform: uppercase;
-    line-height: 1.1;
+                line-height: 1.1;
     margin-bottom: 25px;
 }
 
@@ -184,40 +184,207 @@ header {
 
 
 .interface-t {
-    background-color: aliceblue;
+    padding: 100px 10%;
+    background-color: var(--cor-fundo-secundaria);
     display: grid;
     place-items: center;
 }
 
 .interface-t h1 {
-    color: blue;
-    margin: 30px;
+    font-weight: 650;
+    font-size: 3rem;
+    color: var(--cor-texto);
+    margin-top: -7rem;
+    padding-bottom: 3.5rem;
+    line-height: 1.1;
+
 }
 
 .interface-t h1 span {
-    color: rgb(255, 0, 0);
+    color: var(--cor-destaque);
 }
 
 
+.table1 h3,
+.table2 h3,
+.table3  h3 {
+    font-size: 1.2rem;
+    font-weight: 400 bold;
+    color: var(--cor-destaque);
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    line-height: 1.1;
+    border-bottom: 1px solid var(--cor-destaque);
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
 
 .tables {
     display: flex;
-    gap: 20%;
-    text-align: center;
-    justify-content: center;
-    font-size: 30px;
-    background-color: aqua;
-    padding: 20px;
-    width: 60%;
-    margin: 30px;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15%;
+    background-color: var(--cor-fundo);
+    padding: 50px;
+    border-radius: 20px;
+    width: auto;
+    max-width: 1200px;
+    border: 5px solid var(--cor-primaria);
+
+}
+
+.tables p{
+    font-size: 1rem;
+    line-height: 1.6;
+    line-height: 1.8;
+    color: var(--cor-texto);
+    text-align: left;
+    padding: 0 10px;
+    text-align: justify;
 }
 
 .table1,
 .table2,
 .table3 {
-    height: auto;
-    background-color: aliceblue;
-    padding: 20px;
-    border: 3px solid black;
-    border-radius: 5px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    flex:  1;
+    background-color: var(--cor-fundo);
+    padding: 20px 40px;
+    margin: 0 10px;
+
 }
+
+.tables ul li a, .tables ul li   {
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--cor-texto);
+    transition: 0.3s;
+}
+
+.tables ul li a:hover {
+    color: var(--cor-destaque);
+    text-shadow: 0 0 10px var(--cor-destaque);
+}
+.tables ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+
+.interface-c {
+    padding: 100px 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+ .tittle{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1100px;
+    gap: 30px;
+    margin: 0 auto 60px auto;
+}
+
+
+.tittle h2 {
+    text-transform: uppercase;
+    color: var(--cor-destaque);
+    padding-right: 20px;
+    border-right: solid 2px var(--cor-destaque);
+    margin: 0;
+    font-size: 3rem;
+
+
+}
+.tittle p {
+    color: var(--cor-texto);
+    line-height: 1.6;
+    margin: 10px;
+    flex: 1;
+    max-width: 600px;
+    font-size: 1.30rem;
+    text-align: justify;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.body img {
+    width: 100%;
+    max-width: 700px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    transition: 0.5s ease
+}
+.body img :hover{
+    transform: scale(1.02);
+    filter: brightness(1.1);
+}
+
+.body button {
+    width: auto;
+    min-width: 200px;
+    border-radius: 30px;
+    padding: 12px 30px;
+    background-color: var(--cor-primaria);
+    cursor: pointer;
+    font-weight: 800px;
+    font-size: 18px;
+    color: var(--cor-fundo);
+    transition: 0.3s;
+}
+
+.body button:hover{
+    background-color: rgb(106, 106, 106);
+} 
+
+.interface-ic {
+    display: flex;
+    padding: 100px 10%;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+    max-width: 1200px;
+}
+
+.interface-ic h2 {
+    font-size: 3rem;
+    max-width: 700px;
+    color: var(--cor-primaria);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-bottom: 2px solid var(--cor-primaria);
+}
+
+#txt-ic {
+    color: var(--cor-texto);
+    line-height: 1.8;
+    font-size: 1.2rem;
+    text-align: justify;
+    max-width: 850px;
+}
+
+
+
+
+
+
